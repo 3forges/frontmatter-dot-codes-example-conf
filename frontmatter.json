@@ -1,0 +1,232 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    },
+    {
+      "name": "chaussure",
+      "pageBundle": true,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Price",
+          "name": "price",
+          "type": "number"
+        },
+        {
+          "title": "Currency",
+          "name": "currenncy",
+          "type": "string"
+        },
+        {
+          "title": "Size",
+          "name": "pointure",
+          "type": "number"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "TagsDeChaussures",
+          "name": "tagsdechaussures",
+          "type": "tags"
+        },
+        {
+          "title": "CategoriesDeChaussures",
+          "name": "categoriesdechaussures",
+          "type": "categories"
+        }
+      ]
+    },
+    {
+      "name": "chaussuresatalon",
+      "pageBundle": false,
+      "template": "[[workspace]]/.frontmatter/template/chaussuresatalon.md",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Price",
+          "name": "price",
+          "type": "number"
+        },
+        {
+          "title": "Currency",
+          "name": "currenncy",
+          "type": "string"
+        },
+        {
+          "title": "Size",
+          "name": "pointure",
+          "type": "number"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "TagsDeChaussures",
+          "name": "tagsdechaussures",
+          "type": "tags"
+        },
+        {
+          "title": "CategoriesDeChaussures",
+          "name": "categoriesdechaussures",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.content.publicFolder": {
+    "path": "src/assets",
+    "relative": true
+  },
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Default",
+      "path": "[[workspace]]/src/content",
+      "contentTypes": [
+        "default"
+      ]
+    },
+    {
+      "title": "Chaussures à talon",
+      "path": "[[workspace]]/content/chaussuresatalon",
+      "contentTypes": [
+        "chaussuresatalon"
+      ]
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "vente": {
+      "description": "un article à vendre en boutique e-commerce",
+      "body": [
+        " # {{title))",
+        "",
+        "This item is awrsome! ",
+        "",
+        " {{description))",
+        "",
+        "",
+        "<ReactButton type=\"order\" />"
+      ],
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Price",
+          "name": "price",
+          "type": "number"
+        },
+        {
+          "title": "Currency",
+          "name": "currenncy",
+          "type": "string"
+        },
+        {
+          "title": "Size",
+          "name": "pointure",
+          "type": "number"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "frontMatter.dashboard.openOnStart": true
+}
